@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginEnd="5dp"
+    android:layout_marginRight="5dp"
+    android:orientation="vertical"
+    tools:context=".Confirm">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:foregroundGravity="center"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/confirm" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="89dp"
+        android:layout_height="29dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/verify" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:layout_marginBottom="40dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Thanks! Order Placed"
+        android:textColor="#2196F3"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnTrack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="120dp"
+        android:background="@drawable/button"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="Track Order"
+        android:textColor="#FDFBFB" />
+
+</LinearLayout>

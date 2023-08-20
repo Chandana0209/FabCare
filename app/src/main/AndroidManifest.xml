@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.foodex">
+
+    <application
+        android:name=".ApplicationClass"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="Fab Care"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".DryAnimation"></activity>
+        <activity android:name=".LocationAnimation" />
+        <activity android:name=".IronAnimation" />
+        <activity android:name=".WashAnimation" />
+        <activity android:name=".PaymentAnimation" />
+        <activity android:name=".Payment">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Menu" />
+        </activity>
+        <activity android:name=".TrackOrder">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Confirm" />
+        </activity>
+        <activity android:name=".FindStore">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Home" />
+        </activity>
+        <activity android:name=".Confirm">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Menu" />
+        </activity>
+        <activity android:name=".About">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Home" />
+        </activity>
+        <activity android:name=".Menu" />
+        <activity
+            android:name=".Home"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name=".SignUp"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

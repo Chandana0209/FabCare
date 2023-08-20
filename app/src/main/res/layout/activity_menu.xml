@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FCFDFE"
+    android:orientation="vertical"
+    tools:context=".Menu">
+
+    <fragment
+        android:id="@+id/listFrag"
+        android:name="com.example.foodex.MenuListFrag"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/OrderDetailFrag"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout="@layout/fragment_menu_list" />
+
+    <fragment
+        android:id="@+id/OrderDetailFrag"
+        android:name="com.example.foodex.OrderDetailsFrag"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonFrag"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listFrag"
+        tools:layout="@layout/fragment_order_details" />
+
+    <fragment
+        android:id="@+id/buttonFrag"
+        android:name="com.example.foodex.MenuButtonFrag"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/OrderDetailFrag"
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout="@layout/fragment_menu_button" />
+</androidx.constraintlayout.widget.ConstraintLayout>

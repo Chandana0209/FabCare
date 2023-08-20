@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">FoodEx</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="estimated_time">Estimated Time</string>
+    <string name="order_number">ORDER NUMBER</string>
+    <string name="_30_minutes">30 Minutes</string>
+    <string name="order_number_value">10001</string>
+    <string name="order_placed">Order Placed</string>
+    <string name="we_have_received_your_order">We have received your order</string>
+    <string name="order_confirmed">Order Confirmed</string>
+    <string name="your_order_has_been_confirmed">Your order has been confirmed</string>
+    <string name="order_processed">Order Processed</string>
+    <string name="we_are_preparing_your_order">We are prepapring your order</string>
+    <string name="ready_to_pickup">Ready To Pickup</string>
+    <string name="your_order_is_ready_for_pickup">Your order is ready for pickup</string>
+</resources>
